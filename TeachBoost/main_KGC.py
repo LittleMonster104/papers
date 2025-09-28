@@ -18,11 +18,11 @@ DATA_PATH = './data/KGC_data/'
 RESULT_PATH = './log/KGC_log/'
 
 parser = argparse.ArgumentParser(
-    description="Urban Knowledge Graph Construction"
+    description="Knowledge Graph Construction"
 )
 parser.add_argument(
-    "--dataset", default="NYC_Instruct", choices=["NYC", "CHI", "NYC_Instruct", "CHI_Instruct"],
-    help="Urban Knowledge Graph construction datasets"
+    "--dataset", default="CCC_Instruct", choices=["CCC", "EDU", "CCC_Instruct", "EDU_Instruct"],
+    help="Knowledge Graph construction datasets"
 )
 parser.add_argument(
     "--url", default="https://gpt-api.hkust-gz.edu.cn/v1/chat/completions", type=str,
